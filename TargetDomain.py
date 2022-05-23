@@ -3,8 +3,8 @@ import numpy as np
 StartPoint = -2.6, 1.8
 AdditionalStartPoints = [(-2.5, 1.6), (-2.3, 1.8)]
 # AdditionalStartPoints = [(2.3, 0), (0, -2)]
-x1Range = -5, 5
-x2Range = -5, 5
+x1Range = -10, 10
+x2Range = -10, 10
 
 def F(x1, x2):
     return -2 * np.cos(x1) - np.cos(x2) - np.cos(x1 - x2)

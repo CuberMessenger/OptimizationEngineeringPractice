@@ -15,9 +15,9 @@ DIRECT
 '''
 triangles = None
 
-# answer = GradientDescent.Solve(1e-1, 1e-6, 1e3)
+answer = GradientDescent.Solve(1e-1, 1e-6, 1e3)
 # answer = UnivariateSearch.Solve(10, 1e-4)
-answer, triangles = Simplex.Solve(1e-4)
+# answer, triangles = Simplex.Solve(1e-4)
 
 x1, x2, xGrid, yGrid, zGrid = GetGrid()
 
@@ -25,7 +25,8 @@ data = [
     plotly.graph_objects.Surface(
         x = xGrid,
         y = yGrid,
-        z = zGrid
+        z = zGrid,
+        opacity = 0.5
     ),
     plotly.graph_objects.Surface(
         x = xGrid,
